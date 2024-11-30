@@ -138,20 +138,6 @@ const qaArray = [
                    "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
         answer: "Hey, how can I help you?"
     },
-    {
-        question: ["*", "#", "@", "!", "$", "%", "^", "&", "(", ")", "-", "_", "+", 
-                   "=", "{", "}", "[", "]", "|", "\\", ":", ";", "'", "\"", "<", ">", 
-                   ",", ".", "/", "?", "~", "`"],
-        answer: "Hey, how can I help you?"
-    },
-    {
-        question: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
-        answer: "Hey, how can I help you?"
-    },
-    {
-        question: ["too many invalid inputs", "help!"],
-        answer: "It looks like you're typing some symbols or numbers repeatedly. How can I assist you? Feel free to ask about garbage pickup, plumbing, or carpentry services!"
-    }
 ];
 
 
@@ -337,7 +323,6 @@ const fetchResponse = async (loadingElement) => {
 };
 
 
-let invalidInputCount = 0;  // Counter for consecutive invalid inputs
 
 // Handle Message Submission
 messageForm.addEventListener("submit", (event) => {
@@ -345,21 +330,6 @@ messageForm.addEventListener("submit", (event) => {
 
     currentUserMessage = messageForm.querySelector(".prompt__form-input").value.trim();
     if (!currentUserMessage || isGeneratingResponse) return;
-
-    // Check for invalid inputs (letters, numbers, special characters)
-    const invalidInputs = /^[a-zA-Z0-9*#@!$%^&()_+={}[\]|\\:;'"<>,.?~`]+$/;
-    if (invalidInputs.test(currentUserMessage)) {
-        invalidInputCount++;
-    } else {
-        invalidInputCount = 0;  // Reset counter for valid inputs
-    }
-
-    // If invalid input count exceeds a threshold, give a special response
-    if (invalidInputCount > 3) {
-        addChatMessage("It looks like you're typing some symbols or numbers repeatedly. How can I assist you? Feel free to ask about garbage pickup, plumbing, or carpentry services!", "incoming");
-        invalidInputCount = 0;  // Reset the counter after giving the response
-        return;
-    }
 
     addChatMessage(currentUserMessage, "outgoing");
     messageForm.reset();
