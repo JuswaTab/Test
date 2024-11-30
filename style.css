@@ -508,9 +508,9 @@ blockquote{
     }
 }
 
-/* Add to your existing CSS */
+
 .message__text {
-    word-wrap: break-word; /* Break long words */
+    word-wrap: break-word; 
     white-space: pre-wrap; /* Handle multi-line text (respect line breaks) */
     overflow-wrap: break-word; /* Break words when necessary */
     word-break: break-word; /* Ensure the long words don't overflow */
