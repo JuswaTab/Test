@@ -4,7 +4,7 @@ const qaArray = [
         answer: "PickUp Days: Saturday\nPickUp Time: 6:45 AM - 8:30 AM\n\nNote:\n  * Please ensure that garbage is placed outside by the designated time.\n  * Use approved garbage bins and separate recyclables when possible."
     },
     {
-        question: ["Garbage Pickup Schedule for All Villanueva Barangays."],
+        question: ["Garbages Pickup Schedule for All Villanueva Barangays."],
         answer: "PickUp Days: Monday, Wednesday, Friday\nPickUp Time: 6:45 AM - 8:30 AM"
     },
     {
@@ -24,7 +24,15 @@ const qaArray = [
         answer: "Hi, I'm Axion. How can I help you with carpentry services?"
     },
     {
-        question: ["Who are you", "Hi", "Hello", "Hey", "Hola", "Hoy", "Axion", "Heey", "Hai", "Hii", "What do you do?", "Axion??", "Axion?"],
+        question: ["Plumbing Service", "Plumber Service", "What is Plumbing?"],
+        answer: "Plumbing refers to the system of pipes, fixtures, and fittings used for the distribution of water, gas,\n and waste removal in buildings. It involves installing, repairing, and maintaining these systems\n to ensure proper water flow, drainage, and functionality.\n If you need assistance, I can help you with plumbing services!"
+    },
+    {
+        question: ["Carpentry Service", "Carpenter Service", "What is Carpentry?"],
+        answer: "Carpentry is the skilled trade of working with wood to construct, repair, or install structures and fixtures,\n such as furniture, doors, cabinets, and frameworks. \nIt involves using tools and techniques to shape, cut, and join wood materials. \nLet me know how I can assist with your carpentry needs!"
+    },
+    {
+        question: ["Who are you", "Hi", "Hello", "Hey", "Hola", "Hoy", "Axion", "Heey", "Hai", "What do you do?", "Axion??", "Axion?"],
         answer: "Hi, I'm Axion. I'm here to help you with your garbage disposal, plumbing, and carpentry needs.\n\nPlease note that while I strive to provide accurate information, there may be occasional inaccuracies.\nI kindly ask that you limit your inquiries to garbage disposal, plumbing, and carpentry-related topics."
     },
     {
@@ -33,7 +41,7 @@ const qaArray = [
     },
     {
         question: ["What is Recycle?", "Recycling", "Recycling?", "What is Recycling"],
-        answer: "Recycling is the process of collecting, processing, and reusing materials that would otherwise be thrown away as waste.\n\nThe goal of recycling is to convert used or discarded items into new materials or products, reducing the need for raw resources, conserving energy, and minimizing environmental impact.\n\n**Key Steps in Recycling:**\n  1. **Collection**: Waste is collected from homes, businesses, and recycling centers.\n  2. **Sorting**: Materials are separated into categories like paper, plastic, metal, and glass to ensure only recyclable items are processed.\n  3. **Processing**: Recyclable materials are cleaned, broken down, and transformed into raw materials.\n  4. **Manufacturing**: These raw materials are used to create new products, such as recycled paper, aluminum cans, or plastic bottles.\n  5. **Purchasing**: Buying products made from recycled materials completes the cycle and encourages sustainable practices.\n\nRecycling helps reduce landfill waste, conserve natural resources, lower greenhouse gas emissions, and save energy. It supports a circular economy where materials are reused rather than discarded."
+        answer: "Recycling is the process of collecting, processing, and reusing materials that would otherwise be thrown away as waste.\n\nThe goal of recycling is to convert used or discarded items into new materials or products, reducing the need for raw resources, conserving energy, and minimizing environmental impact.\n\n**Key Steps in Recycling:**\n  1. **Collection**: Waste is collected from homes, businesses, and recycling centers.\n  2. **Sorting**: Materials are separated into categories like paper, plastic, metal, and glass to ensure only recyclable items are processed.\n  3. **Processing**: Recyclable materials are cleaned, broken down, and transformed into raw materials.\n  4. **Manufacturing**: These raw materials are used to create new products, such as recycled paper, aluminum cans, or plastic bottles.\n  5. **Purchasing**: Buying products made from recycled materials completes the cycle and encourages sustainable practices.\n\nRecycling helps reduce landfill waste, conserve natural resources, lower greenhouse gas emissions, and save energy.\n It supports a circular economy where materials are reused rather than discarded."
     },
     {
         question: ["What can be recycled?", "can recycled", "recycled"],
@@ -65,21 +73,21 @@ const qaArray = [
         question: ["Composting", "What items can go in a compost bin?", "How do I start composting at home?", "Can cooked food scraps be composted?", "How long does composting take?", "What are the benefits of composting?"],
         answer: 
             "**Composting:**\n\n" +
-            "1. **What items can go in a compost bin?**\n   Fruit peels, vegetable scraps, coffee grounds, tea bags, eggshells, and yard waste are great for composting. Avoid meat, dairy, and oily foods.\n\n" +
-            "2. **How do I start composting at home?**\n   Choose a compost bin, add organic waste in layers, maintain a balance of greens (wet waste) and browns (dry waste), and turn it regularly for aeration.\n\n" +
-            "3. **Can cooked food scraps be composted?**\n   Some cooked food scraps can be composted, but avoid items with oils, dairy, or meat, as they attract pests.\n\n" +
-            "4. **How long does composting take?**\n   Composting can take 2-6 months, depending on the material and how often it is aerated.\n\n" +
-            "5. **What are the benefits of composting?**\n   Composting enriches soil, reduces landfill waste, and minimizes methane emissions from organic waste."
+            "1. **What items can go in a compost bin?**\n   Fruit peels, vegetable scraps, coffee grounds, tea bags, eggshells, \nand yard waste are great for composting. Avoid meat, dairy, and oily foods.\n\n" +
+            "2. **How do I start composting at home?**\n   Choose a compost bin, add organic waste in layers, maintain a balance of greens (wet waste) \nand browns (dry waste), and turn it regularly for aeration.\n\n" +
+            "3. **Can cooked food scraps be composted?**\n   Some cooked food scraps can be composted, \nbut avoid items with oils, dairy, or meat, as they attract pests.\n\n" +
+            "4. **How long does composting take?**\n   Composting can take 2-6 months, depending on \nthe material and how often it is aerated.\n\n" +
+            "5. **What are the benefits of composting?**\n   Composting enriches soil, reduces landfill waste,\n and minimizes methane emissions from organic waste."
     },
     {
         question: ["Environmental Concerns", "What happens to my garbage after collection?", "How does improper waste disposal affect the environment?", "What are the benefits of reducing waste?", "What is the impact of plastic pollution?", "Why is landfill waste harmful?"],
         answer: 
             "**Environmental Concerns:**\n\n" +
-            "1. **What happens to my garbage after collection?**\n   Garbage is typically taken to landfills, recycling centers, or waste-to-energy plants, depending on its type and local facilities.\n\n" +
-            "2. **How does improper waste disposal affect the environment?**\n   It leads to pollution, harms wildlife, and contributes to climate change through increased greenhouse gas emissions.\n\n" +
-            "3. **What are the benefits of reducing waste?**\n   Reducing waste conserves resources, saves energy, reduces pollution, and helps mitigate climate change.\n\n" +
-            "4. **What is the impact of plastic pollution?**\n   Plastic pollution harms marine life, contaminates soil and water, and takes hundreds of years to decompose.\n\n" +
-            "5. **Why is landfill waste harmful?**\n   Landfills emit methane, a potent greenhouse gas, and can leach toxic substances into soil and groundwater."
+            "1. **What happens to my garbage after collection?**\n   Garbage is typically taken to landfills, recycling centers,\n or waste-to-energy plants, depending on its type and local facilities.\n\n" +
+            "2. **How does improper waste disposal affect the environment?**\n   It leads to pollution, harms wildlife, \nand contributes to climate change through increased greenhouse gas emissions.\n\n" +
+            "3. **What are the benefits of reducing waste?**\n   Reducing waste conserves resources, saves energy, reduces pollution,\n and helps mitigate climate change.\n\n" +
+            "4. **What is the impact of plastic pollution?**\n   Plastic pollution harms marine life, contaminates soil and water, \nand takes hundreds of years to decompose.\n\n" +
+            "5. **Why is landfill waste harmful?**\n   Landfills emit methane, a potent greenhouse gas, \nand can leach toxic substances into soil and groundwater."
     },
     {
         question: ["Local Policies and Regulations", "What are the waste disposal rules in my area?", "When is garbage collection day?", "Are there fines for not segregating waste?", "Who do I contact for bulky waste pickup?", "What are the rules for recycling in my area?"],
@@ -113,30 +121,25 @@ const qaArray = [
         question: ["How do I fix a leaking faucet?", "What causes low water pressure?", "How do I unclog a drain?", "What are common causes of pipe leaks?", "How can I prevent frozen pipes?", "When should I call a plumber?", "Why is my toilet constantly running?"],
         answer: 
             "**Plumbing:**\n\n" +
-            "1. **How do I fix a leaking faucet?**\n   Turn off the water supply, disassemble the faucet, replace the washer or O-ring, and reassemble it. If unsure, consult a plumber.\n\n" +
-            "2. **What causes low water pressure?**\n   Common causes include clogged pipes, a malfunctioning pressure regulator, or issues with the local water supply.\n\n" +
-            "3. **How do I unclog a drain?**\n   Use a plunger, drain snake, or a mixture of baking soda and vinegar. Avoid harsh chemical cleaners as they can damage pipes.\n\n" +
-            "4. **What are common causes of pipe leaks?**\n   Corrosion, high water pressure, loose connections, or freezing and thawing cycles can lead to leaks.\n\n" +
-            "5. **How can I prevent frozen pipes?**\n   Insulate pipes, let faucets drip during freezing weather, and keep the thermostat consistent.\n\n" +
-            "6. **When should I call a plumber?**\n   Call a professional for major leaks, burst pipes, water heater issues, or persistent drainage problems.\n\n" +
-            "7. **Why is my toilet constantly running?**\n   Check the flapper valve, fill valve, and float. Adjust or replace these components as needed."
+            "1. **How do I fix a leaking faucet?**\n   Turn off the water supply, disassemble the faucet, replace the washer or O-ring,\n and reassemble it. If unsure, consult a plumber.\n\n" +
+            "2. **What causes low water pressure?**\n   Common causes include clogged pipes, a malfunctioning pressure regulator,\n or issues with the local water supply.\n\n" +
+            "3. **How do I unclog a drain?**\n   Use a plunger, drain snake, or a mixture of baking soda and vinegar. \nAvoid harsh chemical cleaners as they can damage pipes.\n\n" +
+            "4. **What are common causes of pipe leaks?**\n   Corrosion, high water pressure, loose connections, \nor freezing and thawing cycles can lead to leaks.\n\n" +
+            "5. **How can I prevent frozen pipes?**\n   Insulate pipes, let faucets drip during freezing weather, \nand keep the thermostat consistent.\n\n" +
+            "6. **When should I call a plumber?**\n   Call a professional for major leaks, burst pipes, water heater issues,\n or persistent drainage problems.\n\n" +
+            "7. **Why is my toilet constantly running?**\n   Check the flapper valve, fill valve, and float.\n Adjust or replace these components as needed."
     },
     {
         question: ["How do I fix a squeaky door?", "What tools are essential for basic carpentry?", "How can I repair a broken wooden chair?", "What type of wood is best for furniture?", "How do I sand and refinish wood?", "How can I measure and cut wood accurately?", "What is the difference between hardwood and softwood?"],
         answer: 
             "**Carpentry:**\n\n" +
-            "1. **How do I fix a squeaky door?**\n   Apply lubricant (like WD-40) to the hinges or tighten loose screws. If needed, replace the hinges.\n\n" +
-            "2. **What tools are essential for basic carpentry?**\n   Essential tools include a hammer, screwdriver, tape measure, saw, drill, level, and sandpaper.\n\n" +
-            "3. **How can I repair a broken wooden chair?**\n   Disassemble the chair, apply wood glue to the joints, clamp the pieces tightly, and let it dry before reassembling.\n\n" +
-            "4. **What type of wood is best for furniture?**\n   Hardwood like oak, maple, or walnut is durable and ideal for furniture, while softwood like pine is budget-friendly but less sturdy.\n\n" +
-            "5. **How do I sand and refinish wood?**\n   Sand the surface with progressively finer sandpaper, clean off the dust, apply stain or paint, and finish with a protective sealant.\n\n" +
-            "6. **How can I measure and cut wood accurately?**\n   Use a tape measure, square, and pencil to mark the wood. Cut slowly with a saw or power tool, following the guide lines.\n\n" +
-            "7. **What is the difference between hardwood and softwood?**\n   Hardwood comes from deciduous trees and is dense and durable, while softwood comes from conifers and is lighter and easier to work with."
-    },
-    {
-        question: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
-                   "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
-        answer: "Hey, how can I help you?"
+            "1. **How do I fix a squeaky door?**\n   Apply lubricant (like WD-40) to the hinges or tighten loose screws. If needed, replace the hinges.\n" +
+            "2. **What tools are essential for basic carpentry?**\n   Essential tools include a hammer, screwdriver, tape measure, saw, drill, level,\n and sandpaper.\n\n" +
+            "3. **How can I repair a broken wooden chair?**\n   Disassemble the chair, apply wood glue to the joints, clamp the pieces tightly, and\n let it dry before reassembling.\n\n" +
+            "4. **What type of wood is best for furniture?**\n   Hardwood like oak, maple, or walnut is durable and ideal for furniture,\n while softwood like pine is budget-friendly but less sturdy.\n\n" +
+            "5. **How do I sand and refinish wood?**\n   Sand the surface with progressively finer sandpaper, clean off the dust, apply stain or paint,\n and finish with a protective sealant.\n\n" +
+            "6. **How can I measure and cut wood accurately?**\n   Use a tape measure, square, and pencil to mark the wood. Cut slowly with a saw or power tool,\nfollowing the guide lines.\n\n" +
+            "7. **What is the difference between hardwood and softwood?**\n   Hardwood comes from deciduous trees and is dense and durable, while softwood comes\n from conifers and is lighter and easier to work with."
     },
 ];
 
@@ -381,3 +384,65 @@ const handleOutgoingMessage = () => {
 window.addEventListener("load", () => {
     loadSavedChatHistory();
 });
+
+const textElement = document.getElementById("text-part");  // Target the h1 text
+const subTextElement = document.getElementById("subtext-part");  // Target the h2 text
+const text = "Hello, I'm Axion.";  // The text for h1
+const subText1 = "How can I assist you today?"; // Initial text for h2
+const subText2 = "How can I help you?";
+const subText3 = "Need Assistance?"
+
+let index = 0;
+let subIndex = 0;
+let isTyping = true;  // Flag for typing or erasing for h1
+let isSubTyping = true;  // Flag for typing or erasing for h2
+let subText = subText1;  // Start with first text in h2
+
+// Typewriter effect for h1
+function typeWriter() {
+    if (isTyping) {
+        // Typing h1 text
+        if (index < text.length) {
+            textElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100);  // Adjust speed (in ms)
+        } 
+    }
+}
+
+// Typewriter effect for h2
+function typeSubText() {
+    if (isSubTyping) {
+        // Typing h2 text
+        if (subIndex < subText.length) {
+            subTextElement.innerHTML += subText.charAt(subIndex);
+            subIndex++;
+            setTimeout(typeSubText, 100);  // Adjust speed (in ms)
+        } else {
+            isSubTyping = false;  // Switch to erasing after typing
+            setTimeout(typeSubText, 10000);  // Wait before erasing
+        }
+    } else {
+        // Erasing h2 text
+        if (subIndex > 0) {
+            subTextElement.innerHTML = subText.substring(0, subIndex - 1);
+            subIndex--;
+            setTimeout(typeSubText, 50); // Adjust speed for erasing
+        } else {
+            // Switch text in h2 after erasing
+            if (subText === subText1) {
+                subText = subText2;  // Change to second text after erasing
+            } if (subText === subText2) {
+                subText = subText3;  // Change back to first text
+            }
+            else {
+                subText = subText1;
+            }
+            isSubTyping = true;  // Switch back to typing
+            setTimeout(typeSubText, 1500); // Wait before typing
+        }
+    }
+}
+
+typeWriter(); // Start h1 typing effect
+typeSubText(); // Start h2 typing effect
